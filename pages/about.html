@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon-16x16.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Corggio</title>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+            <a class="header__logo" href="../index.html" class="header__logo__container">
+                <img class="header__logo" src="../assets/corggio_banner.png" alt="banner">
+            </a>
+            <img src="../assets/menu_icon.png" class="header__nav__icon">
+            <ul class="header__nav__buttons">
+                    <li class="header__menu__item"><a href="../index.html">INICIO</a></li>
+                    <li class="header__menu__item"><a href="orders.html">PEDIDOS</a></li>
+                    <li class="header__menu__item"><a href="blog.html">BLOG</a></li>
+                    <li class="header__menu__item"><a href="about.html">NOSOTROS</a></li>
+                    <li class="header__menu__item"><a href="account.html">MI CUENTA</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Landing section -->
+        <section class="pages__landing">
+            <h1 class="pages__landing__title">Distribución y asesoría en el rubro ferretero</h1>
+            <div class="pages__landing__container">
+                <p class="general__body__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </section>
+
+        <!-- Contact temporary section -->
+        <section class="contact">
+            <h1 class="main__body__title">CONTACTO</h1>
+                <form method="POST">
+                    <div class="contact__form__item">
+                        <label class="general__body__text">Nombre</label>
+                        <input class="contact__form__input" name="nombre"/>
+                    </div>
+                    <div class="contact__form__item">
+                        <label class="general__body__text">Apellido</label>
+                        <input class="contact__form__input" name="apellido"/>
+                    </div>
+                    <div class="contact__form__item">
+                        <label class="general__body__text">Sexo</label>
+                        <div class="contact__form__input">
+                            <input class="general__body__text" type="radio" name="sexo" value="Hombre">Hombre</input>
+                            <input class="general__body__text" type="radio" name="sexo" value="Mujer"/>Mujer</input>
+                        </div>
+                    </div>
+                    <div class="contact__form__item">
+                        <label class="general__body__text">Tipo de consulta</label>
+                        <select class="contact__form__input" name="tipo_consulta">
+                            <option>Funcionamiento de la plataforma</option>
+                            <option>Quiero contactar un asesor</option>
+                            <option>Reclamos</option>
+                            <option>Sugerencias</option>
+                        </select>
+                    </div>
+                    <div class="contact__form__item">
+                        <label class="general__body__text">Consulta</label>
+                        <textarea class="contact__form__input" name="consulta"></textarea>
+                    </div>
+                    <div class="contact__form__item">
+                        <input type="submit" class="action__button"/>
+                    </div>
+                   
+                </form>
+        </section>
+    </main>
+    </body>
+    <footer class="footer">
+        <div class="footer__widget__section__mobile">
+            <ul class="footer__menu">
+                <li class="footer__menu__item"><a href="../index.html">INICIO</a></li>
+                <li class="footer__menu__item"><a href="./orders.html">PEDIDOS</a></li>
+                <li class="footer__menu__item"><a href="./blog.html">BLOG</a></li>
+                <li class="footer__menu__item"><a href="about.html">NOSOTROS</a></li>
+                <li class="footer__menu__item"><a href="./account.html">MI CUENTA</a></li>
+            </ul>
+        </div>
+        <div class="footer__widget__section"> 
+            <div class="footer__container">
+                <div class="footer__newsletter__form">
+                    <p class="general__body__title">SUSCRIBIRSE A NUESTRAS NOTICIAS</p>
+                    <form>
+                        <input name="email" placeholder="E-mail"/>
+                        <input type="submit"/>
+                    </form>
+                </div>
+                <div class="footer__navigation"> 
+                    <p class="general__body__title">EXPLORAR</p>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__item"><a href="index.html">INICIO</a></li>
+                        <li class="footer__menu__item"><a href="./pages/orders.html">PEDIDOS</a></li>
+                        <li class="footer__menu__item"><a href="./pages/blog.html">BLOG</a></li>
+                        <li class="footer__menu__item"><a href="./pages/about.html">NOSOTROS</a></li>
+                        <li class="footer__menu__item"><a href="./pages/account.html">MI CUENTA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__container">
+                <p class="general__body__title">CONTACTO</p>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="../assets/whatsapp.png"/>
+                    <p class="footer__sn__text">351-7675132</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="../assets/facebook.png"/>
+                    <p class="footer__sn__text">corggio.cordoba</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="../assets/instagram.png"/>
+                    <p class="footer__sn__text">corggio</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="../assets/email.png"/>
+                    <p class="footer__sn__text">corggio@gmail.com</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="../assets/maps.png"/>
+                    <p class="footer__sn__text">Santiago Temple 152</p>
+                </div>
+            </div>
+    
+            <div class="footer__container footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.382476073332!2d-64.19470208513496!3d-31.431135781399234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28a33d5a27d%3A0xb9b5bdf3b0ad7112!2sSantiago%20Temple%20152%2C%20X5000CVD%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1650664324190!5m2!1ses-419!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer__bottom__bar">
+            <img class="footer__bottom__bar__image" src="../assets/corggio_logo.png" alt="logo"/>
+            <p class="footer__bottom__bar__text">Corggio 2022. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>

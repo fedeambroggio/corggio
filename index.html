@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets//favicon-16x16.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Corggio</title>
+</head>
+<body>
+    <header>
+        <nav class="header__nav">
+                <a href="index.html" class="header__logo__container">
+                    <img class="header__logo" src="./assets/corggio_banner.png" alt="banner">
+                </a>
+                <img src="./assets/menu_icon.png" class="header__nav__icon">
+                <ul class="header__nav__buttons">
+                    <li class="header__menu__item"><a href="index.html">INICIO</a></li>
+                    <li class="header__menu__item"><a href="./pages/orders.html">PEDIDOS</a></li>
+                    <li class="header__menu__item"><a href="./pages/blog.html">BLOG</a></li>
+                    <li class="header__menu__item"><a href="./pages/about.html">NOSOTROS</a></li>
+                    <li class="header__menu__item"><a href="./pages/account.html">MI CUENTA</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Landing section -->
+        <section class="landing">
+            <h1 class="landing__title">Artículos de ferretería para todos tus proyectos</h1>
+            <div class="landing__container">
+                <p class="general__body__subtitle">Encuentra todo lo que necesitas en tu nuevo sitio de confianza</p>
+                <a href="#our__products"> 
+                    <button class="action__button">Descubrir Artículos</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Products section -->
+        <section class="products">
+            <h2 class="main__body__title" id="our__products">NUESTROS PRODUCTOS</h2>
+            <div class="products__container">
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 1</p>
+                </div>
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 2</p>
+                </div>
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 3</p>
+                </div>
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 4</p>
+                </div>
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 5</p>
+                </div>
+                <div class="products__card">
+                    <p class="general__body__title products__card__title">CATEGORÍA 6</p>
+                </div>
+            </div>
+            <a href="./pages/orders.html"> 
+                <button class="action__button">Ver más</button>
+            </a>
+        </section>
+
+        <!-- Offer section  -->
+        <section class="offers">
+            <div class="offers__container">
+                <p class="general__body__title offers__title">CATEGORÍA 4</p>
+                <h2 class="offers__message">40% de Descuento</h2>
+                <div class="offers__btn__container">
+                    <a href="./pages/orders.html"> 
+                        <button class="action__button">Comprar Ahora</button>
+                    </a>
+                </div>
+            </div>
+            <img class="offers__image" src="./assets/category4.jpg"/>
+        </section>
+
+        <!-- About section -->
+        <section class="about">
+            <div class="about__images__container">
+                <img class="about__main__image" src="./assets/category4.jpg"/>
+                <img class="about__secondary__image about__floating__image--right" src="./assets/category4.jpg"/>
+            </div>
+            <div class="about__text__container">
+                <p class="general__body__title">SOBRE NOSOTROS</p>
+                <h2 class="general__body__subtitle">Distribución de artículos de ferretería</h2>
+                <p class="general__body__text about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, tenetur laudantium expedita unde ab excepturi exercitationem, a nostrum dicta suscipit vitae labore totam autem officiis, assumenda culpa perspiciatis odio sequi.</p>
+                <a href="./pages/about.html"> 
+                    <button class="action__button">Sobre Nosotros</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about__text__container--start">
+                <p class="general__body__title">SERVICIOS</p>
+                <h2 class="general__body__subtitle">Representación de marcas y asesoría comercial</h2>
+                <p class="general__body__text about__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, tenetur laudantium expedita unde ab excepturi exercitationem, a nostrum dicta suscipit vitae labore totam autem officiis, assumenda culpa perspiciatis odio sequi.</p>
+                <a href="./pages/about.html"> 
+                    <button class="action__button">Servicios</button>
+                </a>
+            </div>
+            <div class="about__images__container">
+                <img class="about__secondary__image about__floating__image--left" src="./assets/category4.jpg"/>
+                <img class="about__main__image" src="./assets/category4.jpg"/>
+            </div>
+        </section>
+
+        <!-- News Section -->
+
+        <section>
+            <h2 class="main__body__title">ÚLTIMAS NOTICIAS</h2>
+            <div class="news__container">
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/news_example1.png"/>
+                  <div class="news__card__body">
+                    <div>
+                        <span class="news__card__tag">Ventas</span>
+                    </div>
+                    <h3 class="general__body__title news__card__title">
+                      Top de ventas Abril
+                    </h3>
+                    <p class="general__body__text news__card__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum harum officia numquam dolorum totam! Harum velit dicta fugit iusto illum voluptate, voluptatem totam adipisci aut!
+                    </p>
+                    <a href="./pages/blog.html" class="news__card__button"> 
+                        <button class="action__button">Leer más</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/news_example2.jpeg"/>
+                    <div class="news__card__body">
+                        <div>
+                            <span class="news__card__tag">Productos</span>
+                        </div>
+                        <h3 class="general__body__title news__card__title">
+                        Nuevos productos disponibles
+                        </h3>
+                        <p class="general__body__text news__card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum harum officia numquam dolorum totam! Harum velit dicta fugit iusto illum voluptate, voluptatem totam adipisci aut!
+                        </p>
+                        <a href="./pages/blog.html" class="news__card__button"> 
+                            <button class="action__button">Leer más</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="news__card">
+                    <img class="news__card__image" src="./assets/news_example3.jpg"/>
+                    <div class="news__card__body">
+                        <div>
+                            <span class="news__card__tag">Novedades</span>
+                        </div>
+                        <h3 class="general__body__title news__card__title">
+                        Nueva normativa de seguridad
+                        </h3>
+                        <p class="general__body__text news__card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum harum officia numquam dolorum totam! Harum velit dicta fugit iusto illum voluptate, voluptatem totam adipisci aut!
+                        </p>
+                        <a href="./pages/blog.html"  class="news__card__button"> 
+                            <button class="action__button">Leer más</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__widget__section__mobile">
+            <ul class="footer__menu">
+                <li class="footer__menu__item"><a href="index.html">INICIO</a></li>
+                <li class="footer__menu__item"><a href="./pages/orders.html">PEDIDOS</a></li>
+                <li class="footer__menu__item"><a href="./pages/blog.html">BLOG</a></li>
+                <li class="footer__menu__item"><a href="./pages/about.html">NOSOTROS</a></li>
+                <li class="footer__menu__item"><a href="./pages/account.html">MI CUENTA</a></li>
+            </ul>
+        </div>
+        <div class="footer__widget__section"> 
+            <div class="footer__container">
+                <div class="footer__newsletter__form">
+                    <p class="general__body__title">SUSCRIBETE A NUESTRAS NOTICIAS</p>
+                    <form>
+                        <input name="email" placeholder="E-mail"/>
+                        <input type="submit"/>
+                    </form>
+                </div>
+                <div class="footer__navigation"> 
+                    <p class="general__body__title">EXPLORAR</p>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__item"><a href="index.html">INICIO</a></li>
+                        <li class="footer__menu__item"><a href="./pages/orders.html">PEDIDOS</a></li>
+                        <li class="footer__menu__item"><a href="./pages/blog.html">BLOG</a></li>
+                        <li class="footer__menu__item"><a href="./pages/about.html">NOSOTROS</a></li>
+                        <li class="footer__menu__item"><a href="./pages/account.html">MI CUENTA</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__container">
+                <p class="general__body__title">CONTACTO</p>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="./assets/whatsapp.png"/>
+                    <p class="footer__sn__text">351-7675132</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="./assets/facebook.png"/>
+                    <p class="footer__sn__text">corggio.cordoba</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="./assets/instagram.png"/>
+                    <p class="footer__sn__text">corggio</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="./assets/email.png"/>
+                    <p class="footer__sn__text">corggio@gmail.com</p>
+                </div>
+                <div class="footer__contact__info">
+                    <img class="footer__sn__icon" src="./assets/maps.png"/>
+                    <p class="footer__sn__text">Santiago Temple 152</p>
+                </div>
+            </div>
+    
+            <div class="footer__container footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.382476073332!2d-64.19470208513496!3d-31.431135781399234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28a33d5a27d%3A0xb9b5bdf3b0ad7112!2sSantiago%20Temple%20152%2C%20X5000CVD%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1650664324190!5m2!1ses-419!2sar" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer__bottom__bar">
+            <img class="footer__bottom__bar__image" src="./assets/corggio_logo.png" alt="logo"/>
+            <p class="footer__bottom__bar__text">Corggio 2022. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
