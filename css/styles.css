@@ -224,6 +224,14 @@ header {
     font-family: 'Encode Sans', sans-serif;
 }
 
+.landing__button {
+    transition: all 0.5s;
+}
+
+.landing__button:hover {
+    transform: scale(1.1);
+}
+
 /* PRODUCTS SECTION */
 
 .products {

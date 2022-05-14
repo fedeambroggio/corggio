@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Corggio</title>
 </head>
 <body>
@@ -34,7 +35,7 @@
             <div class="landing__container">
                 <p class="general__body__subtitle">Encuentra todo lo que necesitas en tu nuevo sitio de confianza</p>
                 <a href="#our__products"> 
-                    <button class="action__button">Descubrir Artículos</button>
+                    <button class="action__button landing__button">Descubrir Artículos</button>
                 </a>
             </div>
         </section>
@@ -43,22 +44,22 @@
         <section class="products">
             <h2 class="main__body__title" id="our__products">NUESTROS PRODUCTOS</h2>
             <div class="products__container">
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 1</p>
                 </div>
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 2</p>
                 </div>
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 3</p>
                 </div>
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 4</p>
                 </div>
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 5</p>
                 </div>
-                <div class="products__card">
+                <div class="products__card" data-aos="flip-left" data-aos-duration="1200">
                     <p class="general__body__title products__card__title">CATEGORÍA 6</p>
                 </div>
             </div>
@@ -236,5 +237,9 @@
             <p class="footer__bottom__bar__text">Corggio 2022. Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
