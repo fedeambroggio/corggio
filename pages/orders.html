@@ -94,6 +94,519 @@
             </div>
         </section>
 
+        <!-- Store section -->
+
+        <section class="store">
+          
+            <!-- HEADER -->
+            
+            <div class="store__header container-fluid">
+                <div class="row justify-content-around align-items-center store__no__margin">
+                    <div class="col-md-8 col-sm-8 gy-4">
+                        <form class="row">
+                            <div class="col-9 text-center">
+                                <label class="general__body__text">¿Qué estas buscando?</label>
+                                <input type="text" class="form-control" placeholder="Ej: Amoladora BOSCH 670WS">
+                            </div>
+                            <div class="col-3 align-self-center">
+                                <button type="submit" class="btn btn-corggio align-middle">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-sm-4 gy-4">
+                        <select class="form-select">
+                            <option disabled selected hidden>Ordenar por...</option>
+                            <option value="1">Relevancia</option>
+                            <option value="2">Mayor precio</option>
+                            <option value="3">Menor precio</option>
+                            <option value="4">Más vendidos</option>
+                            <option value="5">Más recientes</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FILTERS -->
+
+            <div class="store__filters">
+                <h2 class="main__body__title">
+                    Filtros
+                </h2>
+
+                <!-- Mobile -->
+
+                <div class="container store__mobile">
+                  <div class="row">
+                    <div class="col-4 text-center">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-corggio store__filters__dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorías
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Herramientas Eléctricas
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Guantes
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Calzado
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Protección Ocular
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Protección Auditiva
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              Vestimenta
+                            </label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-corggio store__filters__dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Marcas
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              BOSCH
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              BAHCO
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              SKIL
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              DEWALT
+                            </label>
+                          </div>
+                          <div class="form-check st__filters__dropdown__margin">
+                            <input class="form-check-input" type="checkbox" value="1">
+                            <label class="form-check-label">
+                              MAKITA
+                            </label>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-4 text-center">
+                      <div class="dropdown">
+                        <button class="btn dropdown-toggle btn-corggio store__filters__dropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Precios
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">$1000 - $5000</a></li>
+                          <li><a class="dropdown-item" href="#">$5001 - $10000</a></li>
+                          <li><a class="dropdown-item" href="#">$10001 - +$10001</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  
+                <!-- Desktop -->
+
+                <div class="accordion store__desktop">
+                    <div class="accordion-item"  id="panelsStayOpen-headingOne">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button accordion-toggle-corggio collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Categorías
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="0">
+                                <label class="form-check-label">
+                                  Herramientas Eléctricas
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1">
+                                <label class="form-check-label">
+                                  Guantes
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="2">
+                                <label class="form-check-label">
+                                  Calzado
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="3">
+                                <label class="form-check-label">
+                                  Protección Ocular
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="4">
+                                <label class="form-check-label">
+                                  Protección Auditiva
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label">
+                                  Vestimenta
+                                </label>
+                              </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button accordion-toggle-corggio collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                          Marcas
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="0">
+                                <label class="form-check-label">
+                                  BOSCH
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1">
+                                <label class="form-check-label">
+                                  BAHCO
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="2">
+                                <label class="form-check-label">
+                                  SKIL
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="3">
+                                <label class="form-check-label">
+                                  DEWALT
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="4">
+                                <label class="form-check-label">
+                                  MAKITA
+                                </label>
+                              </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button accordion-toggle-corggio collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+                          Precios
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+
+                            <div class="col">
+                                <div class="d-flex justify-content-center">
+                                    <form class="range-field">
+                                        <input class="border-0" type="range" min="1000" max="10000" step="1" />
+                                      </form>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span class="general__body__text">$1000</span>
+                                    <span class="general__body__text">$10000</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+
+            
+            <!-- SHOP -->
+            <div class="store__shop">
+              <div class="container">
+                
+                <!-- Cards desktop version -->
+                
+                <div class="row justify-content-center store__desktop">
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example3.jpg" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Cuchillo BAHCO</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$1700</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example1.jpg" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Equipo de pintar DOGO</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$11500</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example2.png" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Amoladora BOSCH</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$5000</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example4.png" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Amoladora SKIL</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$5800</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example5.jpg" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Compresor DRIVEN</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$9800</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto gy-4">
+                    <div class="card" style="width: 18rem;">
+                      <img src="../assets/products/product_example6.jpg" class="card-img-top store__card__image" alt="prod">
+                      <div class="card-body store__card__padding">
+                        <h5 class="general__body__subtitle">Fresador DREMEL</h5>
+                        <div class="row justify-content-around">
+                          <div class="col-4">
+                            <span class="align-middle store__card__price">$7900</span>
+                          </div>
+                          <div class="col-4">
+                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Cards mobile version -->
+
+                <div class="row justify-content-center store__mobile">
+                  
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example3.jpg" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Cuchillos BAHCO</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$1700</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example2.png" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Amoladora BOSCH</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$5000</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example1.jpg" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Equipo de pintar DOGO</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$11500</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example4.png" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Amoladora SKIL</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$5800</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example5.jpg" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Compresor DRIVEN</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$9800</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center store__no__margin">
+                    <div class="card mb-3" style="max-width: 90%;">
+                      <div class="row align-items-center">
+                        <div class="col-4">
+                          <img src="../assets/products/product_example6.jpg" class="img-fluid rounded-start" alt="prod">
+                        </div>
+                        <div class="col-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Fresador DREMEL</h5>
+                            <div class="row justify-content-start">
+                              <div class="col-6">
+                                <span class="align-middle store__card__price">$7900</span>
+                              </div>
+                              <div class="col-6">
+                                <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+        </section>
+        
         <!-- Orders temporary section -->
         <section class="orders">
             <h1 class="main__body__title">PEDIDOS</h1>

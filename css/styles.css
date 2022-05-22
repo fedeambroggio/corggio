@@ -27,6 +27,19 @@ header {
     color: #FFF; 
 }
 
+.btn-corggio {
+    font-family: "Encode Sans", sans-serif;
+    background-color: #810000;
+    border: #810000 solid 1px;  
+    color: #FFF;
+}
+
+.btn-corggio:hover {
+    background-color: #600000;  
+    color: #FFF; 
+    border: #810000 solid 1px;
+}
+
 .nav-corggio-link {
     text-decoration: none;
     font-family: "Encode Sans", sans-serif;
@@ -542,6 +555,70 @@ header {
     margin-top: 8px;
 }
 
+.store {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "st__filters st__header"
+                         "st__filters  st__shop";
+    grid-template-rows: 104px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+
+.store__header {
+    grid-area: st__header;
+}
+
+.store__no__margin {
+    margin: 0;
+}
+
+.store__filters {
+    grid-area: st__filters;
+    padding: 16px;
+}
+
+.store__mobile {
+    display: none;
+}
+
+.st__filters__dropdown__margin {
+    margin: 8px;
+}
+
+.store__filters__dropdown {
+    width: 120px;
+    font-size: 16px;
+    font-family: "Encode Sans", sans-serif;
+}
+
+.store__shop {
+    grid-area: st__shop;
+}
+
+.store__card__padding {
+    padding: 8px;
+}
+
+.store__card__price {
+    font-size: 22px;
+    color: #000;
+    font-family: "Encode Sans", sans-serif;
+    margin: 0px;
+    font-weight: 700;
+}
+
+.store__card__image {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.accordion-toggle-corggio.collapsed {
+    background-color: #810000;
+    color:#FFF;
+}
+
+
 /* SMALL DESKTOP SCREEN CSS */
 @media (min-width:721px) and (max-width:1080px) {
     a {
@@ -664,10 +741,7 @@ header {
         font-size: 14px;
     }
     /* Pages css */
-/*     .orders__iframe {
-        width: 50;
-        height: 250px;
-    } */
+
 }
 
 /* TABLET CSS */
@@ -678,6 +752,9 @@ header {
     .action__button {
         font-size:14px;
         padding:8px 16px;
+    }
+    .btn-corggio {
+        font-size: 16px;
     }
     .main__body__title {
         font-size: 28px;
@@ -808,10 +885,42 @@ header {
         width: 400px;
         padding-top: 250px; 
     }
+
+    .store {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "st__header"
+                             "st__filters"
+                             "st__shop";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+    }
+    
+    .store__header {
+        grid-area: st__header;
+    }
+    .store__filters {
+        grid-area: st__filters;
+        padding: 16px;
+    }
+    .store__filters__dropdown {
+        width: 104px;
+        font-size: 14px;
+        font-family: "Encode Sans", sans-serif;
+    }
+    .store__desktop {
+        display: none;
+    }
+    .store__mobile {
+        display: block;
+    }
+    .store__shop {
+        grid-area: st__shop;
+    }
 }
 
 /* PHONE CSS */
-@media (min-width:320px) and (max-width:540px) {
+@media (min-width:340px) and (max-width:540px) {
     .general__body__title {
         font-size: 14px;
     }
@@ -834,6 +943,9 @@ header {
         font-size:12px;
         padding:8px 16px;
     }
+    .btn-corggio {
+        font-size: 12px;
+    }
     /* Landing css */
     .landing__title {
         padding: 64px 0 0 48px;
@@ -850,7 +962,7 @@ header {
     }
     /* Pages Landing css */
     .pages__landing {
-        height: 400px; 
+        height: 450px; 
     }
     
     .pages__landing__container {
@@ -980,4 +1092,38 @@ header {
         width: 300px;
         padding-top: 200px; 
     }
+    .store {
+        display: grid;
+        width: 100%;
+        grid-template-areas: "st__header"
+                             "st__filters"
+                             "st__shop";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+    }
+    .store__header {
+        grid-area: st__header;
+    }
+    .store__filters {
+        grid-area: st__filters;
+        padding: 16px;
+    }
+    .store__filters__dropdown {
+        width: 88px;
+        font-size: 12px;
+        font-family: "Encode Sans", sans-serif;
+    }
+    .store__desktop {
+        display: none;
+    }
+    .store__mobile {
+        display: block;
+    }
+    .store__shop {
+        grid-area: st__shop;
+    }
+    .store__card__price {
+        font-size: 18px;
+    }
+
 }
