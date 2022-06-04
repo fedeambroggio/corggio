@@ -212,4 +212,46 @@
             font-size: 18px;
         }
     }
+    .blog {
+        display: flex;
+        justify-content: center;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+        }
+    }
+    .account {
+        grid-template-columns: auto;
+        grid-template-areas: "profile" "events";
+    }
+    .profile {
+        grid-area: profile;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        &__picture {
+            margin-bottom: 24px;
+            width: 180px;
+            height: 180px;
+        }
+        &__information {
+            display: flex;
+            flex-direction: column;
+            &__btn {
+                margin-top: 16px;
+                align-self: center;
+            }
+        }
+    }
+    .join__us {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-self: center;
+        }
+    }
 }

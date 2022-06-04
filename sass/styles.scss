@@ -17,6 +17,7 @@
 
 ul {
     list-style-type: none;
+    padding: 0 !important;
 }
 
 .a__corggio {
@@ -116,7 +117,7 @@ header {
     }
 
     &__menu {
-        margin-left: -16px;
+        margin-left: 16px;
 
         &__item {
             display: block;
@@ -210,6 +211,9 @@ header {
         margin: 0px;
         &--black {
             @include textMixin(1rem, #000);
+            &--right {
+                @include textMixin(1rem, #000, right);
+            }
         }
     }
 
@@ -376,7 +380,7 @@ $categoriesImg: (
 
 /* ABOUT SECTION */
 .about {
-    margin: 32px 16px;
+    margin: 48px 16px;
     padding: 16px;
     display: flex;
     justify-content: center;
@@ -608,7 +612,7 @@ $categoriesImg: (
 
     &__card {
         &__price {
-            @include textMixin(1.5rem, #000, start, 700);
+            @include textMixin(1.3rem, #000, start, 700);
             margin: 0px;
         }
 
@@ -620,6 +624,112 @@ $categoriesImg: (
             width: 100%;
             height: 18rem;
             object-fit: cover;
+        }
+    }
+}
+
+.blog {
+    display: flex;
+    justify-content: center;
+    &__container {    
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+.join__us {
+    display: flex;
+    justify-content: center;
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+    &__card {
+        width: auto;
+        height: auto;
+        margin: 16px 32px;
+        padding: 32px 16px;
+        background-color: #FFF;
+        border-radius: 10px;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            @include textMixin(1.5rem, $cg-primary-color, center, 700);
+            height: 72px;
+            display: flex;
+            align-items: center;
+        }
+        &__list {
+            margin: 16px 0;
+        }
+        &__text {
+            @include textMixin(1.2rem, #000, center, 700);
+            margin: 16px 0px;
+        }
+    }
+}
+
+.account {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "profile events";
+    gap: 24px;
+}
+
+.profile {
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    &__picture {
+        align-self: center;
+        margin-bottom: 24px;
+        width: 250px;
+        height: 250px;
+    }
+    &__information {
+        &__btn {
+            margin-top: 16px;
+        }
+    }
+}
+
+.events {
+    grid-area: events;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__card {
+        width: 90%;
+        height: auto;
+        padding: 24px;
+        margin: 8px 0px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__body {
+            margin: 8px 0;
+            &__text {
+                @include textMixin(1rem, #000)
+            }
+        }
+        &__footer {
+            display: flex;
+            justify-content: center;
         }
     }
 }
