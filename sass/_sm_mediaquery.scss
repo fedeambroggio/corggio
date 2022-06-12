@@ -22,16 +22,12 @@
     /* Landing css */
 
     .landing {
-        height: 650px;
-
         &__title {
-            padding: 88px 0 0 48px;
-            font-size: 48px;
+            @include textMixin(2.5rem, $cg-primary-color, start, 600);
             max-width: 60%;
         }
-
-        &__container {
-            margin-top: 96px;
+        &__subtitle {
+            @include textMixin(1.5rem, $cg-font-secondary-color, center);
         }
     }
 
@@ -63,54 +59,12 @@
 
     /* About css */
     .about {
-        height: 300px;
-
-        &__images {
-            &__container {
-                width: 260px;
-            }
-
-            &__positioning {
-                margin-right: -32px;
-
-                &--left {
-                    margin-left: -32px;
-                }
-            }
+        &__container {
+            width: 85%;
         }
-
         &__main__image {
             width: 200px;
             height: 200px;
-        }
-
-        &__secondary__image {
-            width: 120px;
-            height: 120px;
-        }
-
-        &__floating__image {
-            &--right {
-                position: relative;
-                left: -64px;
-                top: 104px;
-            }
-
-            &--left {
-                position: relative;
-                left: 64px;
-                top: 104px;
-            }
-        }
-
-        &__text__container {
-            padding-left: 8px;
-            max-width: 50%;
-
-            &--start {
-                padding-right: 8px;
-                max-width: 50%;
-            }
         }
     }
 

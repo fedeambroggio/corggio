@@ -88,11 +88,13 @@
     </header>
     <main>
         <!-- Landing section -->
-        <section class="pages__landing">
-            <h1 class="pages__landing__title">Gran variedad de herramientas eléctricas</h1>
-            <div class="pages__landing__container">
-                <p class="general__body__subtitle">Encuentra todas las herramientas que necesitas en tu nuevo sitio de confianza</p>
-                <button class="action__button landing__button">Ver categoría</button>
+        <section class="landing">
+            <h1 class="landing__title">GRAN VARIEDAD DE HERRAMIENTAS ELÉCTRICAS</h1>
+            <div class="landing__container">
+                <p class="landing__subtitle">Encuentra todas las herramientas que necesitas en tu nuevo sitio de confianza</p>
+                <a class="a__corggio" href="#store__shop">
+                  <button class="action__button landing__button">Ver categoría</button>
+                </a>
             </div>
         </section>
 
@@ -145,37 +147,37 @@
                           Categorías
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Herramientas Eléctricas
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Guantes
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Calzado
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Protección Ocular
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Protección Auditiva
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               Vestimenta
@@ -190,31 +192,31 @@
                           Marcas
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               BOSCH
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               BAHCO
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               SKIL
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               DEWALT
                             </label>
                           </div>
-                          <div class="form-check st__filters__dropdown__margin">
+                          <div class="form-check store__filters__dropdown__margin">
                             <input class="form-check-input" type="checkbox" value="1">
                             <label class="form-check-label">
                               MAKITA
@@ -231,7 +233,7 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                           <li><a class="dropdown-item" href="#">$1000 - $5000</a></li>
                           <li><a class="dropdown-item" href="#">$5001 - $10000</a></li>
-                          <li><a class="dropdown-item" href="#">$10001 - +$10001</a></li>
+                          <li><a class="dropdown-item" href="#">$10001 - >$10001</a></li>
                         </ul>
                       </div>
                     </div>
@@ -345,9 +347,9 @@
 
                             <div class="col">
                                 <div class="d-flex justify-content-center">
-                                    <form class="range-field">
-                                        <input class="border-0" type="range" min="1000" max="10000" step="1" />
-                                      </form>
+                                    <form>
+                                        <input class="border-0" type="range" min="1000" max="10000" step="1"/>
+                                    </form>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <span class="general__body__text">$1000</span>
@@ -363,12 +365,12 @@
 
             
             <!-- SHOP -->
-            <div class="store__shop">
+            <div id="store__shop" class="store__shop">
               <div class="container">
                 
                 <!-- Cards desktop version -->
                 
-                <div class="row justify-content-center store__desktop">
+                <div class="row justify-content-center store__desktop mb-4">
                   <div class="col-auto gy-4">
                     <div class="card" style="width: 18rem;">
                       <img src="../assets/products/product_example3.jpg" class="card-img-top store__card__image" alt="prod">
@@ -379,7 +381,7 @@
                             <span class="align-middle store__card__price">$1700</span>
                           </div>
                           <div class="col-4">
-                            <a href="#" class="align-middle btn btn-primary btn-corggio">Comprar</a>
+                            <a href="#" class="align-middle btn btn-corggio">Comprar</a>
                           </div>
                         </div>
                       </div>
@@ -606,17 +608,6 @@
                 </div>
 
               </div>
-            </div>
-        </section>
-        
-        <!-- Orders temporary section -->
-        <section class="orders">
-            <h1 class="main__body__title">PEDIDOS</h1>
-            <div class="orders__container">
-                <p class="general__body__text">Presentado nuestro sistema de preparación de pedidos</p>
-                <div class="orders__iframe__container">
-                    <iframe class="orders__iframe" src="https://www.youtube.com/embed/CPx0sTgitZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
             </div>
         </section>
     </main>

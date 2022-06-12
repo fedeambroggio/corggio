@@ -20,41 +20,6 @@ header {
   top: 0px;
   z-index: 10; }
 
-.bg-corggio-primary {
-  background-color: #810000;
-  color: #FFF; }
-
-.btn-corggio, .btn-corggio:hover {
-  font-family: "Encode Sans", sans-serif;
-  background-color: #810000;
-  border: #810000 solid 1px;
-  color: #FFF; }
-
-.btn-corggio:hover {
-  background-color: #600000; }
-
-.nav-corggio-link {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: start;
-  color: #FFF;
-  text-decoration: none;
-  margin: 16px 8px; }
-
-.nav-corggio-link:hover {
-  color: #FFF; }
-
-.offcanvas-corggio-title {
-  font-family: "Encode Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: start;
-  color: #FFF; }
-
-.bg-white {
-  color: #FFF; }
-
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -82,7 +47,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 400px; }
+  height: auto; }
   .footer__widget__section {
     display: flex;
     justify-content: space-evenly;
@@ -154,7 +119,8 @@ header {
   border-radius: 18px;
   cursor: pointer;
   padding: 8px 24px;
-  text-decoration: none; }
+  text-decoration: none;
+  text-align: center; }
 
 .action__button:hover {
   background: #710000; }
@@ -162,14 +128,14 @@ header {
 .main__body__title {
   font-family: "Encode Sans", sans-serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   text-align: center;
   color: #810000;
   margin: 16px 0px; }
 
 .general__body__title {
   font-family: "Encode Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: start;
   color: #FFF;
@@ -223,7 +189,7 @@ header {
 /* LANDING SECTION */
 .landing {
   background-image: url("../assets/storage_background.jpg");
-  height: 700px;
+  height: auto;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,20 +200,28 @@ header {
   .landing__container {
     display: flex;
     flex-direction: column;
-    align-self: center;
     align-items: center;
-    width: 80%;
-    height: 136px;
-    margin-top: 136px;
-    text-align: center; }
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    margin: 64px 0;
+    padding: 0px 32px;
+    background-color: rgba(129, 0, 0, 0.4); }
   .landing__title {
     font-family: "Encode Sans", sans-serif;
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: start;
     color: #810000;
-    padding: 120px 0 0 64px;
-    max-width: 45%; }
+    padding: 88px 0 0 64px;
+    max-width: 50%; }
+  .landing__subtitle {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #FFF; }
   .landing__button {
     transition: all 0.5s; }
     .landing__button:hover {
@@ -255,7 +229,7 @@ header {
 
 /* PRODUCTS SECTION */
 .products {
-  margin: 16px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -267,10 +241,9 @@ header {
     grid-template-rows: 1fr 1fr;
     gap: 24px; }
   .products__card, .products__card__cat1, .products__card__cat2, .products__card__cat3, .products__card__cat4, .products__card__cat5, .products__card__cat6 {
-    width: 80%;
+    width: 90%;
     aspect-ratio: 2/1;
     padding: 8px;
-    margin: 0px 16px;
     overflow: hidden;
     object-fit: cover;
     background-size: cover;
@@ -280,6 +253,7 @@ header {
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
+    justify-self: center;
     align-items: center; }
     .products__card__title {
       text-align: center; }
@@ -299,7 +273,7 @@ header {
 /* OFFERS SECTION */
 .offers {
   background-color: #000;
-  background-image: linear-gradient(rgba(129, 0, 0, 0.5), rgba(129, 0, 0, 0.8));
+  background-image: linear-gradient(rgba(129, 0, 0, 0.5), #810000);
   height: 400px;
   display: flex;
   justify-content: space-around;
@@ -329,42 +303,30 @@ header {
 
 /* ABOUT SECTION */
 .about {
-  margin: 48px 16px;
-  padding: 16px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 300px; }
+  margin: 24px 0px; }
+  .about__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 70%; }
   .about__text__container {
     display: inline-block;
-    text-align: end; }
+    text-align: end;
+    margin-left: 32px; }
     .about__text__container--start {
       display: inline-block;
-      text-align: start; }
+      text-align: start;
+      margin-right: 32px; }
   .about__description {
     max-width: 500px;
     margin: 8px 0px; }
-  .about__images__container {
-    display: flex;
-    justify-content: center; }
   .about__main__image {
-    border-radius: 4px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover; }
-  .about__secondary__image {
-    border-radius: 4px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover; }
-  .about__floating__image--right {
-    position: relative;
-    left: -120px;
-    top: 136px; }
-  .about__floating__image--left {
-    position: relative;
-    left: 120px;
-    top: 136px; }
 
 /* NEWS SECTION */
 .news {
@@ -413,31 +375,6 @@ header {
 |  __/ ___ \ |_| | |___ ___) |
 |_| /_/   \_\____|_____|____/ 
 */
-.pages__landing {
-  background-image: url("../assets/storage_background.jpg");
-  height: 500px;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; }
-  .pages__landing__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    height: 136px;
-    margin: 48px 32px 0px 32px; }
-  .pages__landing__title {
-    font-family: "Encode Sans", sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: start;
-    color: #810000;
-    padding: 64px 0 0 64px;
-    max-width: 500px; }
-
 .orders {
   margin: 16px; }
   .orders__container {
@@ -485,9 +422,12 @@ header {
     grid-area: st__filters;
     padding: 16px; }
     .store__filters__dropdown {
-      width: 120px;
-      font-size: 16px;
-      font-family: "Encode Sans", sans-serif; }
+      font-family: "Encode Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: start;
+      color: #FFF;
+      width: 120px; }
       .store__filters__dropdown__margin {
         margin: 8px; }
   .store__shop {
@@ -612,6 +552,52 @@ header {
   background-color: #810000;
   color: #FFF; }
 
+.accordion-button:not(.collapsed) {
+  background-color: #810000;
+  color: #FFF; }
+
+.accordion-button:focus {
+  border-color: #810000; }
+
+.form-check-input:checked {
+  background-color: #810000;
+  border-color: #810000; }
+
+.bg-corggio-primary {
+  background-color: #810000;
+  color: #FFF; }
+
+.btn-corggio, .btn-corggio:hover {
+  font-family: "Encode Sans", sans-serif;
+  background-color: #810000;
+  border: #810000 solid 1px;
+  color: #FFF; }
+
+.btn-corggio:hover {
+  background-color: #600000; }
+
+.nav-corggio-link {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: start;
+  color: #FFF;
+  text-decoration: none;
+  margin: 16px 8px; }
+
+.nav-corggio-link:hover {
+  color: #FFF; }
+
+.offcanvas-corggio-title {
+  font-family: "Encode Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: start;
+  color: #FFF; }
+
+.bg-white {
+  color: #FFF; }
+
 /* SMALL DESKTOP SCREEN CSS */
 @media (min-width: 721px) and (max-width: 1080px) {
   a {
@@ -622,14 +608,8 @@ header {
   .main__body__title {
     font-size: 30px; }
   /* Landing css */
-  .landing {
-    height: 650px; }
-    .landing__title {
-      padding: 88px 0 0 48px;
-      font-size: 48px;
-      max-width: 60%; }
-    .landing__container {
-      margin-top: 96px; }
+  .landing__title {
+    max-width: 60%; }
   /* Products css */
   .products__container {
     margin: 16px 0px;
@@ -642,30 +622,11 @@ header {
   .offers__message {
     font-size: 32px; }
   /* About css */
-  .about {
-    height: 300px; }
-    .about__images__container {
-      width: 300px; }
-    .about__main__image {
-      width: 230px;
-      height: 230px; }
-    .about__secondary__image {
-      width: 150px;
-      height: 150px; }
-    .about__floating__image--right {
-      position: relative;
-      left: -64px;
-      top: 104px; }
-    .about__floating__image--left {
-      position: relative;
-      left: 64px;
-      top: 104px; }
-    .about__text__container {
-      padding-left: 8px;
-      max-width: 50%; }
-      .about__text__container--start {
-        padding-right: 8px;
-        max-width: 50%; }
+  .about__container {
+    width: 80%; }
+  .about__main__image {
+    width: 230px;
+    height: 230px; }
   /* News css */
   .news {
     margin-top: 32px; }
@@ -727,14 +688,19 @@ header {
   .main__body__title {
     font-size: 28px; }
   /* Landing css */
-  .landing {
-    height: 650px; }
-    .landing__title {
-      padding: 88px 0 0 48px;
-      font-size: 48px;
-      max-width: 60%; }
-    .landing__container {
-      margin-top: 96px; }
+  .landing__title {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: start;
+    color: #810000;
+    max-width: 60%; }
+  .landing__subtitle {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #FFF; }
   /* Pages Landing css */
   .pages__landing__title {
     padding: 64px 0 0 48px;
@@ -752,34 +718,11 @@ header {
   .offers__message {
     font-size: 32px; }
   /* About css */
-  .about {
-    height: 300px; }
-    .about__images__container {
-      width: 260px; }
-    .about__images__positioning {
-      margin-right: -32px; }
-      .about__images__positioning--left {
-        margin-left: -32px; }
-    .about__main__image {
-      width: 200px;
-      height: 200px; }
-    .about__secondary__image {
-      width: 120px;
-      height: 120px; }
-    .about__floating__image--right {
-      position: relative;
-      left: -64px;
-      top: 104px; }
-    .about__floating__image--left {
-      position: relative;
-      left: 64px;
-      top: 104px; }
-    .about__text__container {
-      padding-left: 8px;
-      max-width: 50%; }
-      .about__text__container--start {
-        padding-right: 8px;
-        max-width: 50%; }
+  .about__container {
+    width: 85%; }
+  .about__main__image {
+    width: 200px;
+    height: 200px; }
   /* News css */
   .news {
     margin-top: 32px; }
@@ -893,16 +836,19 @@ header {
   .btn-corggio, .btn-corggio:hover {
     font-size: 12px; }
   /* Landing css */
-  .landing {
-    height: 600px; }
-    .landing__container {
-      width: 80%;
-      height: 136px;
-      margin-top: 72px; }
-    .landing__title {
-      padding: 64px 0 0 48px;
-      max-width: 60%;
-      font-size: 36px; }
+  .landing__title {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: start;
+    color: #810000;
+    max-width: 60%; }
+  .landing__subtitle {
+    font-family: "Encode Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    color: #FFF; }
   /* Pages Landing css */
   .pages__landing {
     height: 450px; }
@@ -927,31 +873,14 @@ header {
     .offers__message {
       font-size: 24px; }
   /* About css */
-  .about {
-    margin: 16px 0px;
-    height: 350px; }
-    .about__images__container {
-      width: 220px; }
-    .about__main__image {
-      width: 136px;
-      height: 136px; }
-    .about__secondary__image {
-      width: 96px;
-      height: 96px; }
-    .about__floating__image--right {
-      position: relative;
-      left: -64px;
-      top: 80px; }
-    .about__floating__image--left {
-      position: relative;
-      left: 64px;
-      top: 80px; }
-    .about__text__container {
-      padding-right: 4px;
-      max-width: 50%; }
-      .about__text__container--start {
-        padding-left: 4px;
-        max-width: 50%; }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 85%; }
+  .about__main__image {
+    display: none; }
   /* News css */
   .news {
     margin-top: 16px; }
