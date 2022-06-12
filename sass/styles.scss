@@ -17,11 +17,11 @@
 
 ul {
     list-style-type: none;
-    padding: 0 !important;
+    padding: 0 !important; // Necesito usar !important porque bootstrap sobrescribe mi padding y no se muestra de la manera en que lo deseo
 }
 
 .a__corggio {
-    @include textMixin(1rem, #FFF);
+    @include textMixin(1rem, $cg-font-secondary-color);
     text-decoration: none;
 }
 
@@ -29,41 +29,6 @@ header {
     position: sticky;
     top: 0px;
     z-index: 10;
-}
-
-.bg-corggio-primary {
-    background-color: $cg-primary-color;
-    color: #FFF;
-}
-
-.btn-corggio {
-    font-family: $cg-primary-font;
-    background-color: $cg-primary-color;
-    border: #810000 solid 1px;
-    color: #FFF;
-}
-
-.btn-corggio:hover {
-    @extend .btn-corggio;
-    background-color: #600000;
-}
-
-.nav-corggio-link {
-    @include textMixin(1.2rem, #FFF);
-    text-decoration: none;
-    margin: 16px 8px;
-}
-
-.nav-corggio-link:hover {
-    color: #FFF;
-}
-
-.offcanvas-corggio-title {
-    @include textMixin(2.5rem, #FFF, start, 700);
-}
-
-.bg-white {
-    color: #FFF
 }
 
 .header {
@@ -104,7 +69,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: auto;
 
     &__widget__section {
         display: flex;
@@ -156,7 +121,7 @@ header {
         }
 
         &__text {
-            @include textMixin(1rem, #FFF, center);
+            @include textMixin(1rem, $cg-font-secondary-color, center);
             margin-left: 24px;
             display: inline;
         }
@@ -170,7 +135,7 @@ header {
         height: 64px;
 
         &__text {
-            @include textMixin(1rem, #FFF);
+            @include textMixin(1rem, $cg-font-secondary-color);
             margin-left: 16px;
             margin-top: 16px;
             display: inline;
@@ -184,7 +149,7 @@ header {
 }
 
 .action__button {
-    @include textMixin(1rem, #FFF);
+    @include textMixin(1rem, $cg-font-secondary-color);
     margin: 8px;
     box-shadow: 2px 4px 2px 0px #410000;
     border: none;
@@ -194,6 +159,7 @@ header {
     cursor: pointer;
     padding: 8px 24px;
     text-decoration: none;
+    text-align: center;
 }
 
 .action__button:hover {
@@ -201,33 +167,33 @@ header {
 }
 
 .main__body__title {
-    @include textMixin(2rem, $cg-primary-color, center);
+    @include textMixin(2rem, $cg-primary-color, center, 600);
     margin: 16px 0px;
 }
 
 .general__body {
     &__title {
-        @include textMixin(1rem, #FFF);
+        @include textMixin(1.5rem, $cg-font-secondary-color);
         margin: 0px;
         &--black {
-            @include textMixin(1rem, #000);
+            @include textMixin(1rem, $cg-font-primary-color);
             &--right {
-                @include textMixin(1rem, #000, right);
+                @include textMixin(1rem, $cg-font-primary-color, right);
             }
         }
     }
 
     &__subtitle {
-        @include textMixin(1.5rem, #000);
+        @include textMixin(1.5rem, $cg-font-primary-color);
         &--right {
-            @include textMixin(1.5rem, #000, right)
+            @include textMixin(1.5rem, $cg-font-primary-color, right)
         }
     }
 
     &__text {
-        @include textMixin(1rem, #000, start, 400);
+        @include textMixin(1rem, $cg-font-primary-color, start, 400);
         &--right {
-            @include textMixin(1rem, #000, right)
+            @include textMixin(1rem, $cg-font-primary-color, right)
         }
     }
 }
@@ -244,7 +210,7 @@ header {
 
 .landing {
     background-image: url("../assets/storage_background.jpg");
-    height: 700px;
+    height: auto;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -256,18 +222,24 @@ header {
     &__container {
         display: flex;
         flex-direction: column;
-        align-self: center;
         align-items: center;
-        width: 80%;
-        height: 136px;
-        margin-top: 136px;
+        justify-content: center;
         text-align: center;
+        width: 100%;
+        height: 200px;
+        margin: 64px 0;
+        padding: 0px 32px;
+        background-color: rgba(129, 0, 0, 0.4);
     }
 
     &__title {
-        @include textMixin(3rem, $cg-primary-color);
-        padding: 120px 0 0 64px;
-        max-width: 45%;
+        @include textMixin(3rem, $cg-primary-color, start, 600);
+        padding: 88px 0 0 64px;
+        max-width: 50%;
+    }
+
+    &__subtitle {
+        @include textMixin(1.5rem, $cg-font-secondary-color, center);
     }
 
     &__button {
@@ -291,7 +263,7 @@ $categoriesImg: (
 );
 
 .products {
-    margin: 16px;
+    margin: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,10 +278,9 @@ $categoriesImg: (
     }
 
     &__card {
-        width: 80%;
+        width: 90%;
         aspect-ratio: 2/1;
         padding: 8px;
-        margin: 0px 16px;
         overflow: hidden;
         object-fit: cover;
         background-size: cover;
@@ -319,6 +290,7 @@ $categoriesImg: (
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
+        justify-self: center;
         align-items: center;
 
         &__title {
@@ -342,8 +314,8 @@ $categoriesImg: (
 /* OFFERS SECTION */
 
 .offers {
-    background-color: #000;
-    background-image: linear-gradient(rgba(129, 0, 0, 0.5), rgba(129, 0, 0, 0.8));
+    background-color: $cg-font-primary-color;
+    background-image: linear-gradient(rgba(129, 0, 0, 0.5), rgba(129, 0, 0, 1));
     height: 400px;
     display: flex;
     justify-content: space-around;
@@ -358,11 +330,11 @@ $categoriesImg: (
     }
 
     &__title {
-        color: #FFF;
+        color: $cg-font-secondary-color;
     }
 
     &__message {
-        @include textMixin(2rem, #FFF);
+        @include textMixin(2rem, $cg-font-secondary-color);
         margin: 8px 0px;
     }
 
@@ -380,20 +352,26 @@ $categoriesImg: (
 
 /* ABOUT SECTION */
 .about {
-    margin: 48px 16px;
-    padding: 16px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 300px;
+    margin: 24px 0px;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        width: 70%;
+    }
 
     &__text__container {
         display: inline-block;
         text-align: end;
+        margin-left: 32px;
 
         &--start {
             display: inline-block;
             text-align: start;
+            margin-right: 32px;
         }
     }
 
@@ -402,37 +380,10 @@ $categoriesImg: (
         margin: 8px 0px;
     }
 
-    &__images__container {
-        display: flex;
-        justify-content: center;
-    }
-
     &__main__image {
-        border-radius: 4px;
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
-    }
-
-    &__secondary__image {
-        border-radius: 4px;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }
-
-    &__floating__image {
-        &--right {
-            position: relative;
-            left: -120px;
-            top: 136px;
-        }
-
-        &--left {
-            position: relative;
-            left: 120px;
-            top: 136px;
-        }
     }
 }
 
@@ -467,7 +418,7 @@ $categoriesImg: (
         }
 
         &__tag {
-            @include textMixin(1rem, #FFF);
+            @include textMixin(1rem, $cg-font-secondary-color);
             background-color: $cg-primary-color;
             border-radius: 50px;
             margin: 0px;
@@ -495,33 +446,6 @@ $categoriesImg: (
 |  __/ ___ \ |_| | |___ ___) |
 |_| /_/   \_\____|_____|____/ 
 */
-
-.pages__landing {
-    background-image: url("../assets/storage_background.jpg");
-    height: 500px;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-        height: 136px;
-        margin: 48px 32px 0px 32px;
-    }
-
-    &__title {
-        @include textMixin(3rem, $cg-primary-color);
-        padding: 64px 0 0 64px;
-        max-width: 500px;
-    }
-}
-
 .orders {
     margin: 16px;
 
@@ -588,9 +512,8 @@ $categoriesImg: (
         padding: 16px;
 
         &__dropdown {
+            @include textMixin(1rem, $cg-font-secondary-color);
             width: 120px;
-            font-size: 16px;
-            font-family: $cg-primary-font;
 
             &__margin {
                 margin: 8px;
@@ -612,7 +535,7 @@ $categoriesImg: (
 
     &__card {
         &__price {
-            @include textMixin(1.3rem, #000, start, 700);
+            @include textMixin(1.3rem, $cg-font-primary-color, start, 700);
             margin: 0px;
         }
 
@@ -669,7 +592,7 @@ $categoriesImg: (
             margin: 16px 0;
         }
         &__text {
-            @include textMixin(1.2rem, #000, center, 700);
+            @include textMixin(1.2rem, $cg-font-primary-color, center, 700);
             margin: 16px 0px;
         }
     }
@@ -724,7 +647,7 @@ $categoriesImg: (
         &__body {
             margin: 8px 0;
             &__text {
-                @include textMixin(1rem, #000)
+                @include textMixin(1rem, $cg-font-primary-color)
             }
         }
         &__footer {
@@ -734,10 +657,64 @@ $categoriesImg: (
     }
 }
 
+//OVERWRITED BOOTSTRAP CLASSES
+
 .accordion-toggle-corggio.collapsed {
     background-color: $cg-primary-color;
-    color: #FFF;
+    color: $cg-font-secondary-color;
 }
+
+.accordion-button:not(.collapsed) {
+    background-color: $cg-primary-color;
+    color: $cg-font-secondary-color;
+}
+
+.accordion-button:focus {
+    border-color: $cg-primary-color;
+}
+
+.form-check-input:checked {
+    background-color:  $cg-primary-color;
+    border-color:  $cg-primary-color;
+}
+
+//CLASSES TO MODIFY BOOTSTRAP STYLES
+
+.bg-corggio-primary {
+    background-color: $cg-primary-color;
+    color: $cg-font-secondary-color;
+}
+
+.btn-corggio {
+    font-family: $cg-primary-font;
+    background-color: $cg-primary-color;
+    border: $cg-primary-color solid 1px;
+    color: $cg-font-secondary-color;
+}
+
+.btn-corggio:hover {
+    @extend .btn-corggio;
+    background-color: #600000;
+}
+
+.nav-corggio-link {
+    @include textMixin(1.2rem, $cg-font-secondary-color);
+    text-decoration: none;
+    margin: 16px 8px;
+}
+
+.nav-corggio-link:hover {
+    color: $cg-font-secondary-color;
+}
+
+.offcanvas-corggio-title {
+    @include textMixin(2.5rem, $cg-font-secondary-color, start, 700);
+}
+
+.bg-white {
+    color: $cg-font-secondary-color;
+}
+
 
 @import 'md_mediaquery';
 @import 'sm_mediaquery';

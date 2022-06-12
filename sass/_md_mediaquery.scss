@@ -15,17 +15,10 @@
     /* Landing css */
 
     .landing {
-        height: 650px;
-
         &__title {
-            padding: 88px 0 0 48px;
-            font-size: 48px;
             max-width: 60%;
         }
 
-        &__container {
-            margin-top: 96px;
-        }
     }
 
     /* Products css */
@@ -49,37 +42,12 @@
 
     /* About css */
     .about {
-        height: 300px;
-        &__images__container {
-            width: 300px;
+        &__container {
+            width: 80%;
         }
         &__main__image {
             width: 230px;
             height: 230px;
-        }
-        &__secondary__image {
-            width: 150px;
-            height: 150px;
-        }
-        &__floating__image {
-            &--right {
-                position: relative;
-                left: -64px;
-                top: 104px;
-            }
-            &--left {
-                position: relative;
-                left: 64px;
-                top: 104px;
-            }
-        }
-        &__text__container {
-            padding-left: 8px;
-            max-width: 50%;
-            &--start {
-                padding-right: 8px;
-                max-width: 50%;
-            }
         }
     }
     /* News css */

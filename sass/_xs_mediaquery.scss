@@ -30,17 +30,14 @@
         font-size: 12px;
     }
     /* Landing css */
+
     .landing {
-        height: 600px; 
-        &__container {
-            width: 80%;
-            height: 136px;
-            margin-top: 72px;
-        }
         &__title {
-            padding: 64px 0 0 48px;
+            @include textMixin(2.5rem, $cg-primary-color, start, 600);
             max-width: 60%;
-            font-size: 36px;
+        }
+        &__subtitle {
+            @include textMixin(1.5rem, $cg-font-secondary-color, center);
         }
     }
     /* Pages Landing css */
@@ -76,38 +73,15 @@
 
     /* About css */
     .about {
-        margin: 16px 0px;
-        height: 350px;
-        &__images__container {
-            width: 220px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            width: 85%;
         }
         &__main__image {
-            width: 136px;
-            height: 136px;
-        }
-        &__secondary__image {
-            width: 96px;
-            height: 96px;
-        }
-        &__floating__image {
-            &--right {
-                position: relative;
-                left: -64px;
-                top: 80px;
-            }
-            &--left {
-                position: relative;
-                left: 64px;
-                top: 80px;
-            }
-        }
-        &__text__container {
-            padding-right: 4px;
-            max-width: 50%;
-            &--start {
-                padding-left: 4px;
-                max-width: 50%;
-            }
+            display: none;
         }
     }
 
